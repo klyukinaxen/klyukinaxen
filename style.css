@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css');
+* {
+    font-family: 'Open Sans', 'sans-serif', 'FontAwesome';
+}
+
+.title {
+    text-align: center;
+    color: rgb(61, 61, 61);
+    margin: 0px 50px 20px 50px;
+}
+
+*:focus {
+    outline: none;
+}
+
+input {
+    padding: 0;
+}
+
+input[type="text"] {
+    font-size: 13px;
+    color: rgb(47, 47, 47);
+}
+
+input[type="radio"], input[type="checkbox"], label {
+    cursor: pointer;
+}
+
+body {
+    background-color: rgb(26, 26, 31);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    width: 400px;
+    border-radius: 10px;
+    padding: 60px 30px 60px 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.form>*:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+#user, #pass {
+    height: 45px;
+    font-size: 13px;
+    overflow: hidden;
+    border: none;
+    border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+.fpass {
+    font-size: 12px;
+    margin: auto;
+    color: rgb(77, 77, 77);
+}
+
+.afpass {
+    color: rgb(184, 184, 184);
+}
+
+.radiobutton, #about {
+    font-size: 13px;
+    /* margin: 5px; */
+    color: rgb(77, 77, 77);
+}
+
+#male {
+    margin: 15px 0 15px 0;
+}
+
+.check {
+    margin: auto;
+    font-size: 11px;
+    color: rgb(73, 73, 73);
+}
+
+#about {
+    border: none;
+    border-bottom: 1px solid grey;
+    resize: none;
+}
+
+.buttonSubmit {
+    border-radius: 35px;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    height: 40px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 400ms ease;
+}
+
+.buttonSubmit:hover {
+    box-shadow: 0px 0px 6px 0px #7e56a2;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input {
+    width: 100%;
+}
+
+.input-wrapper input:focus~label, .input-wrapper .not-empty~label {
+    bottom: 3.5em;
+    cursor: text;
+}
+
+.input-wrapper label {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    transition: bottom 300ms ease;
+    font-size: 13px;
+}
+
+/* 
+.update{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    width: 100%;  
+    bottom: 3.5em;
+    font-size: 13px;
+
+} */
