@@ -1,0 +1,192 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css');
+* {
+    font-family: 'Open Sans', 'sans-serif', 'FontAwesome';
+}
+
+img {
+    width: 35px;
+}
+
+.title {
+    font-size: 14px;
+}
+
+.main {
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    display: flex;
+    min-height: 100vh;
+}
+
+.img {
+    width: 40px;
+    height: 45px;
+    margin: 10px 0 0 20px;
+}
+
+.menu {
+    display: block;
+    padding-left: 15px;
+    left: -300px;
+    width: 220px;
+    height: 100%;
+    background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+    position: fixed;
+    transition: left 400ms ease, box-shadow 400ms ease;
+}
+
+.menu-wrapper.menu-active .menu {
+    left: 0;
+    z-index: 3;
+    box-shadow: 0 0 10px rgba(8, 8, 8, 0.3);
+}
+
+.menu-wrapper.menu-active .background {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.background {
+    pointer-events: none;
+    opacity: 0;
+    z-index: 1;
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: opacity 400ms linear;
+}
+
+.title-menu {
+    font-size: 23px;
+    align-items: center;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+
+.item-text {
+    font-size: 14px;
+    padding-left: 10px;
+    line-height: 0;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.flex-container {
+    flex-direction: column;
+    z-index: 2;
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    margin: auto;
+}
+
+.flex-1 {
+    background-image: url(./assets/pizza.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-y: -130px;
+    height: 195px;
+    width: 390px;
+    border-radius: 10px 10px 0 0;
+    margin: 5px 5px 0 5px;
+}
+
+.flex-1 .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.discount-back {
+    background-color: rgb(38, 12, 158);
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.discount-back {
+    color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    margin: 5px 0 0 5px;
+}
+
+.add-to-fav {
+    margin: 5px 5px 0 0;
+}
+
+.flex-2 {
+    background-color: white;
+    height: 195px;
+    width: 390px;
+    margin: 0 0 -5px 5px;
+    border-radius: 0 0 10px 10px;
+}
+
+.flex-2 .text.combo-about {
+    font-size: 12px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.flex-2 .text.combo {
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    align-items: baseline;
+}
+
+.text.price {
+    text-decoration: line-through;
+    color: grey;
+    padding: 0 5px 0 10px;
+    font-size: 23px;
+}
+
+.text.new-price {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.button-buy {
+    background-color: rgb(251, 130, 19);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    width: 150px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px 0 auto;
+}
+
+.add{
+    width: 27px;
+    height: 27px;
+    padding-left: 5px;
+}
+
+.button-buy .text{
+    color: white;
+    font-size: 18px;
+}

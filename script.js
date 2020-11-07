@@ -23,6 +23,8 @@ function formOnSubmit(event) {
     let allow = event.target.allow.checked;
     let user = { login, password, sex, allow };
     console.log(user);
+
+    
 }
 
 /**
