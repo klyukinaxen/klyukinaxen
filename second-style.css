@@ -81,84 +81,75 @@ img {
     height: 20px;
 }
 
-.flex-container {
+.product-card {
     flex-direction: column;
     z-index: 2;
     width: 400px;
-    height: 400px;
     align-items: center;
     margin: auto;
 }
 
-.flex-1 {
+.product-card-image {
     background-image: url(./assets/pizza.jpg);
     background-size: cover;
     background-position: center;
-    background-position-y: -130px;
+    /* background-position-y: -130px; */
     height: 195px;
-    width: 390px;
     border-radius: 10px 10px 0 0;
-    margin: 5px 5px 0 5px;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
-.flex-1 .container {
+.product-card-image .labels {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.discount-back {
+.label-discount-back {
     background-color: rgb(38, 12, 158);
     width: 60px;
     height: 30px;
     border-radius: 20px;
-}
-
-.discount-back {
     color: white;
     font-size: 12px;
     display: flex;
     align-items: center;
-    padding-left: 15px;
-    margin: 5px 0 0 5px;
+    justify-content: center;
 }
 
-.add-to-fav {
-    margin: 5px 5px 0 0;
-}
+.label-add-to-favourite {}
 
-.flex-2 {
+.product-card-info {
     background-color: white;
-    height: 195px;
-    width: 390px;
-    margin: 0 0 -5px 5px;
+    width: 100%;
     border-radius: 0 0 10px 10px;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
-.flex-2 .text.combo-about {
+.product-card-info>*:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.product-card-info .text.combo-about {
     font-size: 12px;
-    padding-top: 20px;
-    padding-left: 10px;
 }
 
-.flex-2 .text.combo {
+.title {
     font-weight: bold;
     font-size: 20px;
-    padding-top: 10px;
-    padding-left: 10px;
 }
 
 .price-container {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
     align-items: baseline;
 }
 
 .text.price {
     text-decoration: line-through;
     color: grey;
-    padding: 0 5px 0 10px;
     font-size: 23px;
 }
 
@@ -167,26 +158,29 @@ img {
     font-weight: bold;
 }
 
+.button-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
 .button-buy {
     background-color: rgb(251, 130, 19);
     display: flex;
     flex-direction: row;
     align-items: center;
     border-radius: 20px;
-    width: 150px;
-    height: 45px;
     justify-content: center;
     align-items: center;
-    margin: 0 5px 0 auto;
+    padding: 7px;
 }
 
-.add{
+.add {
     width: 27px;
     height: 27px;
     padding-left: 5px;
 }
 
-.button-buy .text{
+.button-buy .text {
     color: white;
     font-size: 18px;
 }
