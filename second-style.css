@@ -118,7 +118,10 @@ img {
     justify-content: center;
 }
 
-.label-add-to-favourite {}
+.label-add-to-favourite {
+    cursor: pointer;
+
+}
 
 .product-card-info {
     background-color: white;
@@ -126,10 +129,11 @@ img {
     border-radius: 0 0 10px 10px;
     padding: 15px;
     box-sizing: border-box;
+    cursor: context-menu;
 }
 
-.product-card-info>*:not(:last-child){
-    margin-bottom: 15px;
+.product-card-info>*:not(:last-child) {
+    margin-bottom: 17px;
 }
 
 .product-card-info .text.combo-about {
@@ -141,6 +145,26 @@ img {
     font-size: 20px;
 }
 
+.product-size {
+    display: flex;
+    justify-content: space-around;
+}
+
+.size-button {
+    background-color: rgba(158, 158, 158, 0.753);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    transition: background-color 500ms ease;
+    cursor: pointer;
+}
+
+.size-button:hover {
+    background-color: rgba(97, 97, 97, 0.753);
+}
+
 .price-container {
     display: flex;
     flex-direction: row;
@@ -150,17 +174,19 @@ img {
 .text.price {
     text-decoration: line-through;
     color: grey;
-    font-size: 23px;
+    font-size: 25px;
 }
 
 .text.new-price {
-    font-size: 27px;
+    font-size: 30px;
     font-weight: bold;
 }
 
-.button-container{
+.buy-content {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .button-buy {
@@ -172,6 +198,12 @@ img {
     justify-content: center;
     align-items: center;
     padding: 7px;
+    cursor: pointer;
+    transition: background-color 500ms ease;
+}
+
+.button-buy:hover{
+    background-color: rgba(255, 136, 24, 0.918);
 }
 
 .add {
@@ -183,4 +215,10 @@ img {
 .button-buy .text {
     color: white;
     font-size: 18px;
+    
+}
+
+.size-button-active{
+    background-color: rgba(97, 97, 97, 0.753);
+    box-shadow: 0 0 10px  rgba(97, 97, 97, 0.753);
 }

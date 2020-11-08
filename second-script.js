@@ -15,5 +15,29 @@ function main() {
     background.addEventListener('click', function () {
         menu.classList.remove('menu-active');
     });
+
+    const sizebutton = document.querySelector('.size-button');
+    const productsize = document.querySelectorAll('.product-size');
+    productsize.forEach(function (productsize){
+        productsize.addEventListener('prosuctsize', updateSize);
+    });
+        //console.log(sizebutton);
+        // productsize.addEventListener('click', function () {
+        //     if (sizebutton.classList.contains('active')) {
+        //         sizebutton.classList.remove('active');
+        //     } else {
+        //         sizebutton.classList.add('active');
+        //     }
+        // });  
+    
 }
 
+function updateSize(event) {
+    click = event.target.classList.value;
+    console.log(click);
+    // if (click) {
+    //     event.target.classList.add('active');
+    // } else {
+    //     event.target.classList.remove('active');
+    // }
+}
