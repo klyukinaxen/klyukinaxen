@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css');
+
 * {
     font-family: 'Open Sans', 'sans-serif', 'FontAwesome';
 }
@@ -161,7 +162,8 @@ img {
     cursor: pointer;
 }
 
-.size-button:hover {
+.size-button:hover,
+.size-button.active {
     background-color: rgba(97, 97, 97, 0.753);
 }
 
@@ -202,7 +204,7 @@ img {
     transition: background-color 500ms ease;
 }
 
-.button-buy:hover{
+.button-buy:hover {
     background-color: rgba(255, 136, 24, 0.918);
 }
 
@@ -215,10 +217,10 @@ img {
 .button-buy .text {
     color: white;
     font-size: 18px;
-    
+
 }
 
-.size-button-active{
+.size-button-active {
     background-color: rgba(97, 97, 97, 0.753);
-    box-shadow: 0 0 10px  rgba(97, 97, 97, 0.753);
+    box-shadow: 0 0 10px rgba(97, 97, 97, 0.753);
 }

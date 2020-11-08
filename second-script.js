@@ -18,18 +18,32 @@ function main() {
 
     const sizebutton = document.querySelector('.size-button');
     const productsize = document.querySelectorAll('.product-size');
-    productsize.forEach(function (productsize){
+    productsize.forEach(function (productsize) {
         productsize.addEventListener('prosuctsize', updateSize);
     });
-        //console.log(sizebutton);
-        // productsize.addEventListener('click', function () {
-        //     if (sizebutton.classList.contains('active')) {
-        //         sizebutton.classList.remove('active');
-        //     } else {
-        //         sizebutton.classList.add('active');
-        //     }
-        // });  
-    
+    //console.log(sizebutton);
+    // productsize.addEventListener('click', function () {
+    //     if (sizebutton.classList.contains('active')) {
+    //         sizebutton.classList.remove('active');
+    //     } else {
+    //         sizebutton.classList.add('active');
+    //     }
+    // });  
+
+
+
+
+
+    document.querySelectorAll('.size-button').forEach(button => {
+        button.addEventListener('click', event => {
+            const active = document.querySelector('.size-button.active');
+            if (active) {
+                active.classList.remove('active')
+            }
+
+            event.target.classList.add('active');
+        });
+    });
 }
 
 function updateSize(event) {
