@@ -34,8 +34,8 @@ function main() {
 
 
 
-    document.querySelectorAll('.size-button').forEach(button => {
-        button.addEventListener('click', event => {
+    document.querySelectorAll('.size-button').forEach((button) => {
+        button.addEventListener('click', (event) => {
             const active = document.querySelector('.size-button.active');
             if (active) {
                 active.classList.remove('active')
