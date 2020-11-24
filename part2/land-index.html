@@ -32,14 +32,11 @@
     <div class="intro">
 
         <div class="fixed-panel">
-            <div class="fixed-panel-icons">
-                <img src="./images/facebook.svg">
-                <img src="./images/facebook.svg">
-                <img src="./images/facebook.svg">
-                <img src="./images/facebook.svg">
-            </div>
             <div class="title-panel">КОНТАКТНАЯ ИНФОРМАЦИЯ</div>
 
+            <div class="fixed-panel__line"></div>
+
+            <div class="fixed-panel-icon instagram"></div>
         </div>
 
         <div class="container">
@@ -91,13 +88,27 @@
     <section class="section">
         <div class="section__header">
             <h2 class="section__title">Наши постановки</h2>
-            <div class="section__container__three">
-                <img src="./images/img1.jpg">
-                <div class="lens__image">
-                    <img src="./images/img2.jpg" class="img2">
+            <div class="projects__slider">
+                <div class="projects__item">
+                    <!-- добавить затемнение -->
+                    <img src="./images/img1.jpg" class="projects__item-image">
+                    <!-- отображать только при наведении -->
+                    <img src="./images/lens.png" class="lens">
+                    <div class="projects__item-name">ОСКАР 2020</div>
+                    <div class="projects__item-date">сентябрь 2020</div>
+                </div>
+                <div class="projects__item">
+                    <img src="./images/img2.jpg" class="projects__item-image">
                     <img src="./images/lens.png" class="lens">
                 </div>
-                <img src="./images/img3.jpg">
+                <div class="projects__item">
+                    <img src="./images/img3.jpg" class="projects__item-image">
+                    <img src="./images/lens.png" class="lens">
+                </div>
+                <div class="projects__item">
+                    <img src="./images/img4.jpg" class="projects__item-image">
+                    <img src="./images/lens.png" class="lens">
+                </div>
             </div>
         </div>
     </section>

@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+
 * {
     font-family: 'Open Sans', 'sans-serif', 'Open Sans Condensed';
     box-sizing: border-box;
 }
 
-body, img, h2, h3, p {
+body,
+img,
+h2,
+h3,
+p {
     margin: 0;
 }
 
-h2, h3, p {
+h2,
+h3,
+p {
     font-weight: 300;
 }
 
@@ -86,22 +93,44 @@ h2, h3, p {
 
 .fixed-panel {
     display: flex;
-    flex-direction: column-reverse;
-    overflow: visible;
-    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding: 60px;
+    background: rgb(0 0 0 / 0.3);
+    height: 100%;
+}
+
+.fixed-panel>*:not(:last-child) {
+    margin-bottom: 10px;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-.fixed-panel-icons {
-    display: inline-block;
-    transform: none;
-}
 
 .title-panel {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
 }
+
+.fixed-panel__line {
+    height: 80px;
+    border: 3px solid #C4C4C4;
+}
+
+.fixed-panel-icon {
+    width: 26px;
+    height: 26px;
+}
+
+.fixed-panel-icon.instagram {
+    background-image: url(./images/instagram.svg);
+}
+
+.fixed-panel-icon.instagram:hover {
+    background-image: url(./images/instagram_active.svg);
+}
+
 
 /* .fixed-panel {
     display: flex;
@@ -236,7 +265,7 @@ h2, h3, p {
     padding: 10px;
 }
 
-.section__container__three {
+.projects__slider {
     margin: auto;
     width: 100%;
     max-width: 1770px;
@@ -245,18 +274,43 @@ h2, h3, p {
     flex-direction: row;
 }
 
-.lens__image {
+.projects__item {
     position: relative;
 }
 
-.lens {
-    /* vertical-align: middle; */
-    /* width: 100%; */
+.projects__item-name {
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 0;
+    margin: 40px;
+}
+
+.projects__item-date {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transform: rotate(-180deg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 40px;
+    writing-mode: vertical-lr;
+}
+
+.lens {
+    position: absolute;
     z-index: 2;
-    transform: translate3d(0, -50%, 0);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
 }
 
 .section__container.four {
