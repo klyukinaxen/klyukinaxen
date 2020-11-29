@@ -8,7 +8,7 @@ body, img, h2, h3, p {
     margin: 0;
 }
 
-h2, h3, p {
+h2, h3 {
     font-weight: 300;
 }
 
@@ -344,27 +344,39 @@ h2, h3, p {
     transition: opacity .1s linear;
 }
 
+/* Four section rating */
 
-
-.section__container-rating {
+.section__container-main {
     width: 100%;
-    min-height: 100%;
     max-width: 1100px;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin: 0;
     position: absolute;
 }
 
-.section__container .rating{
-    position: relative;
+.section__container-rating-text {
+    font-size: 72px;
+    color: rgba(209, 169, 84, 1);
+    font-weight: 700;
+    cursor: default;
 }
 
 .container__stars {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
+    margin-bottom: 25px;
 }
 
-.section__container-rating .about
-{
-    position: absolute;
+.star-img {
+    padding-right: 25px;
+}
+
+.section__container-rating.about {
+    font-size: 36px;
+    font-weight: 700;
+    max-width: 540px;
+    letter-spacing: 1.5px;
+    cursor: default;
 }
