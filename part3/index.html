@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HouseVOP</title>
+    <link rel="script" href="map.js">
+    <link rel="script" href="script.js">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/latest/normalize.css" />
 </head>
@@ -32,131 +35,209 @@
 
         </div>
     </header>
+    <div class="main">
+        <div class="intro">
+            <div class="container">
 
-    <div class="intro">
-        <div class="container">
-
-            <div class="intro__inner">
-                <div class="intro__title">
-                    <!-- TODO: как закрепить текст -->
-                    <div class="intro__text"> Жилой комплекс в историческом центре</div>
-                    <img src="./images/mouse.svg" alt="" class="inner__mouse">
-                </div>
-
-                <div class="intro__footer">
-
-                    <div class="intro__footer adress">
-                        <img src="./images/placeholder.svg" alt="" class="footer__placeholder">
-                        <!-- TODO: geo link -->
-                        <div class="footer__text">Наб. реки Фонтанки 10-15</div>
+                <div class="intro__inner">
+                    <div class="intro__title">
+                        <!-- TODO: как закрепить текст -->
+                        <div class="intro__text"> Жилой комплекс в историческом центре</div>
+                        <img src="./images/mouse.svg" alt="" class="inner__mouse">
                     </div>
 
-                    <div class="intro__footer phone">
-                        <img src="./images/phone-call.svg" alt="" class="footer__phone">
-                        <a href="tel:+78121234567" class="footer__text">8 (812) 123-45-67</a>
-                    </div>
+                    <div class="intro__footer">
 
-                </div>
-            </div>
+                        <div class="intro__footer adress">
+                            <img src="./images/placeholder.svg" alt="" class="footer__placeholder">
+                            <!-- TODO: geo link -->
+                            <div class="footer__text">Наб. реки Фонтанки 10-15</div>
+                        </div>
 
-        </div>
-    </div>
+                        <div class="intro__footer phone">
+                            <img src="./images/phone-call.svg" alt="" class="footer__phone">
+                            <a href="tel:+78121234567" class="footer__text">8 (812) 123-45-67</a>
+                        </div>
 
-    <div class="second">
-        <div class="container">
-            <div class="testimonials">
-
-                <div class="testimonials-box">
-                    <img src="./images/bench.svg" alt="" class="testimonials-box ico">
-                    <div class="testimonials-box text">
-                        Рядом исторические парки и скверы
-                    </div>
-                </div>
-
-                <div class="testimonials-box">
-                    <img src="./images/building.svg" alt="" class="testimonials-box ico">
-                    <div class="testimonials-box text">
-                        Полностью обустроенный
-                    </div>
-                </div>
-
-                <div class="testimonials-box">
-                    <img src="./images/fountain.svg" alt="" class="testimonials-box ico">
-                    <div class="testimonials-box text">
-                        10 фонтанов на территории
-                    </div>
-                </div>
-
-                <div class="testimonials-box">
-                    <img src="./images/bicycle.svg" alt="" class="testimonials-box ico">
-                    <div class="testimonials-box text">
-                        6 км<br>велодорожек
                     </div>
                 </div>
 
             </div>
         </div>
-    </div>
 
-    <div class="third">
-        <div class="container">
+        <div class="second">
+            <div class="container">
+                <div class="testimonials">
 
-            <div class="container__title">
-                Наши квартиры
+                    <div class="testimonials-box">
+                        <img src="./images/bench.svg" alt="" class="testimonials-box ico">
+                        <div class="testimonials-box text">
+                            Рядом исторические парки и скверы
+                        </div>
+                    </div>
+
+                    <div class="testimonials-box">
+                        <img src="./images/building.svg" alt="" class="testimonials-box ico">
+                        <div class="testimonials-box text">
+                            Полностью обустроенный
+                        </div>
+                    </div>
+
+                    <div class="testimonials-box">
+                        <img src="./images/fountain.svg" alt="" class="testimonials-box ico">
+                        <div class="testimonials-box text">
+                            10 фонтанов на территории
+                        </div>
+                    </div>
+
+                    <div class="testimonials-box">
+                        <img src="./images/bicycle.svg" alt="" class="testimonials-box ico">
+                        <div class="testimonials-box text">
+                            6 км<br>велодорожек
+                        </div>
+                    </div>
+
+                </div>
             </div>
-
-            <div class="container__apartments">
-
-                <div class="apartment">
-                    <img src="./images/loft1.jpg" alt="" class="apartment-image">
-                    <div class="apartment-title">Лофт - 2 этажа</div>
-                </div>
-
-                <div class="apartment">
-                    <img src="./images/loft2.jpg" alt="" class="apartment-image">
-                    <div class="apartment-title">Лофт - 3 этажа</div>
-                </div>
-
-                <div class="apartment">
-                    <img src="./images/loft2.jpg" alt="" class="apartment-image">
-                    <div class="apartment-title">Лофт - 3 этажа</div>
-                </div>
-
-                <div class="apartment">
-                    <img src="./images/loft1.jpg" alt="" class="apartment-image">
-                    <div class="apartment-title">Лофт - 2 этажа</div>
-                </div>
-
-            </div>
-
         </div>
-    </div>
 
-    <div class="fourth">
-        <div class="container">
+        <div class="third">
+            <div class="container">
 
-            <div class="container__title">
-                Хотите посмотреть?
-            </div>
-
-            <div class="container__cta">
-
-                <div class="cta-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
-                    Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
-                    безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для
-                    распечатки образцов.
+                <div class="container__title">
+                    Наши квартиры
                 </div>
 
-                <div class="cta__form">
+                <div class="container__apartments">
 
-                    <div class="input__name"></div>
-                    <div class="input__phone"></div>
-                    <div class="cta__button">Посмотреть район</div>
+                    <div class="apartment">
+                        <img src="./images/loft1.jpg" alt="" class="apartment-image">
+                        <div class="apartment-title">Лофт - 2 этажа</div>
+                    </div>
+
+                    <div class="apartment">
+                        <img src="./images/loft2.jpg" alt="" class="apartment-image">
+                        <div class="apartment-title">Лофт - 3 этажа</div>
+                    </div>
+
+                    <div class="apartment">
+                        <img src="./images/loft2.jpg" alt="" class="apartment-image">
+                        <div class="apartment-title">Лофт - 3 этажа</div>
+                    </div>
+
+                    <div class="apartment">
+                        <img src="./images/loft1.jpg" alt="" class="apartment-image">
+                        <div class="apartment-title">Лофт - 2 этажа</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="fourth">
+            <div class="container">
+                <div class="container__title">
+                    Хотите посмотреть?
+                </div>
+
+                <div class="container__cta">
+
+                    <div class="cta-text">
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
+                        Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
+                        безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для
+                        распечатки образцов.
+                    </div>
+
+                    <div class="cta__form">
+
+                        <div class="input-cta">
+                            <input class="input-name" type="text" placeholder="Имя">
+                            <input class="input-phone" type="text" placeholder="Телефон">
+                        </div>
+
+                        <div class="feedback-cta">
+                            <div class="cta__safety-text">
+                                *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
+                            </div>
+                            <button class="cta__button">Посмотреть район</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="fifth">
+            <div class="container">
+                <div class="container__title">
+                    Район на карте
+                </div>
+
+                <div class="container__map">
+                    <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d266191.57521560934!2d49.291902429744795!3d58.585060286295764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43fcf680a90e78c1%3A0x6b282355c23fe067!2z0JrQuNGA0L7Qsiwg0JrQuNGA0L7QstGB0LrQsNGPINC-0LHQuy4!5e0!3m2!1sru!2sru!4v1607870060337!5m2!1sru!2sru"
+                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="sixth">
+            <div class="container">
+                <div class="container__title">
+                    Есть вопросы?
+                </div>
+
+                <div class="question__form">
                     <div class="cta__safety-text">
                         *Мы никому не передаем ваши данные. И не сохраняем ваш номер в базу.
                     </div>
-
+                    <input class="input-name" type="text" placeholder="Имя">
+                    <input class="input-phone" type="text" placeholder="Телефон">
+                    <button class="cta__button">Посмотреть район</button>
                 </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="container">
+
+            <div class="footer__container">
+
+                <div class="footer__block logo">
+                    <div class="footer__logo logo">HouseVOP</div>
+                    <div class="footer__logo text">жилой комплекс</div>
+                </div>
+
+                <nav class="footer__menu">
+                    <a href="#">О комплексе</a>
+                    <a href="#">Район</a>
+                    <a href="#">Каталог квартир</a>
+                    <a href="#">Ипотека</a>
+                    <a href="#">Контакты</a>
+                </nav>
+
+                <nav class="footer__info">
+                    <div class="info">Адрес: Наб. реки Фонтанки 10-15</div>
+                    <div class="info">Телефон: 8 (812) 123-45-67</div>
+                    <div class="info">Отдел продаж: 10:00 - 20:00</div>
+                    <div class="info">E-mail: vip@housevip.ru</div>
+                    <div class="footer__icons">
+                        <div class="footer__ico youtube"></div>
+                        <div class="footer__ico vk"></div>
+                        <div class="footer__ico fb"></div>
+                        <div class="footer__ico ig"></div>
+                    </div>
+                </nav>
+
+
 
             </div>
 
