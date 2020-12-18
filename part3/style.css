@@ -297,10 +297,21 @@ a {
 .footer__icons {
     display: flex;
     flex-direction: row;
-    align-items: center;
     height: 50px;
     width: auto;
 }
+
+.footer__ico {
+    width: 36px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 10px 0 0;
+
+}
+
+/* .footer__ico>*:not(:first-child) {
+} */
 
 .footer__ico.vk {
     background-image: url(./images/vk.svg);
